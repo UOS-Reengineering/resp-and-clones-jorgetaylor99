@@ -17,4 +17,9 @@ public class Payroll {
         return staffCategoryPaySchedule.get(staffCategory);
     }
 
+    public void changeDate(String staffCategory, String date) {
+        PaySchedule ps = staffCategoryPaySchedule.get(staffCategory);
+        ps.payDay = date;
+    }
+
 }
